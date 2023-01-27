@@ -1,0 +1,159 @@
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  height: 50vh;
+  width: 100vw;
+  position: relative;
+  padding: 50px 100px;
+}
+
+.carousel {
+  position: static !important;
+}
+
+.testimonialsTitle {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 66px;
+}
+
+.testimonialsTitleSpan {
+  background-color: var(--section-background-color);
+}
+
+.testimonialsImage {
+  width: 73px;
+  height: 73px;
+  border-radius: 50%;
+}
+
+.leftArrow {
+  height: 60px;
+  width: 60px;
+  font-size: 34px;
+  border-radius: 50%;
+  color: black;
+  border: 1px solid blue;
+  position: absolute;
+  left: 100px;
+  bottom: 0%;
+}
+
+.rightArrow {
+  height: 60px;
+  width: 60px;
+  font-size: 34px;
+  border-radius: 50%;
+  color: black;
+  border: 1px solid blue;
+  position: absolute;
+  left: 200px;
+  bottom: 0%;
+}
+
+.carouselPersonName {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.carouselPersonPosition {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.carouselText {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  width: 40ch;
+}
+
+.carouselItem {
+  height: 500px;
+  width: 500px;
+  padding: 30px;
+}
+
+.topTestimonial {
+  display: flex;
+  gap: 30px;
+}
+
+.bottomTestimonial {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.quoteIcon {
+  color: var(--buton-default-color);
+}
+/* 
+.carouselItem {
+  overflow: hidden;
+} */
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1250px) {
+  .topTestimonial {
+    flex-direction: column;
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bottomTestimonial {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carouselItem {
+    height: 500px;
+    width: 500px;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 1205px) {
+  .carousel {
+    margin: 0 auto;
+  }
+
+  .rightArrow {
+    left: 77%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .carouselText {
+    font-size: 18px;
+    line-height: 20px;
+    width: 30ch;
+  }
+
+  .carouselItem {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .testimonialsTitle {
+    font-size: 44px;
+    line-height: 48px;
+  }
+
+  .carouselText {
+    font-size: 16px;
+    line-height: 18px;
+    width: 24ch;
+  }
+
+  .leftArrow {
+    left: 20px;
+  }
+}

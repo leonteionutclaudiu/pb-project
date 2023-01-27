@@ -1,0 +1,93 @@
+@import '../../index.css';
+
+.hero {
+  background-color: var(--section-background-color);
+  padding: 50px 100px;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.heroTitle {
+  font-size: 64px;
+  line-height: 72px;
+  font-weight: 500;
+  color: var(--color-grey);
+}
+
+.heroText {
+  max-width: 65ch;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--color-grey-2);
+  margin: 40px 0;
+}
+
+.ctaHeroBtn {
+  padding: 20px 64px;
+  background-color: var(--buton-default-color);
+  color: white;
+  border: none;
+  border-radius: 60px;
+  transition: all 0.4s;
+}
+
+.ctaHeroBtn:hover {
+  background-color: var(--buton-hover-color);
+}
+
+.ctaHeroBtn:active {
+  background-color: var(--buton-pressed-color);
+}
+
+.ctaHeroBtn:disabled {
+  background-color: var(--buton-disabled-color);
+}
+
+.chart {
+  width: 100%;
+  max-width: 30vw;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1280px) {
+  .hero {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1268px) {
+  .chart {
+    width: 100%;
+    max-width: 100vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heroLeft {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .heroTitle {
+    font-size: 44px;
+    line-height: 48px;
+    font-weight: 500;
+    color: var(--color-grey);
+  }
+
+  .ctaHeroBtn {
+    width: 80vw;
+  }
+}

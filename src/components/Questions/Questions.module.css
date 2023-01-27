@@ -1,0 +1,53 @@
+.questions {
+  padding: 50px 100px;
+}
+
+.titleText {
+  font-size: 64px;
+  line-height: 72px;
+  font-weight: 500;
+  color: var(--color-grey);
+  margin-bottom: 20px;
+}
+
+.questionsSpan {
+  background-color: var(--section-background-color);
+}
+
+.accordion {
+  padding: 40px 80px;
+}
+
+.accordionTitle p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.accordionBody {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1205px) {
+  .questions {
+    margin-top: 300px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .questions {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .titleText {
+    font-size: 44px;
+    line-height: 48px;
+    text-align: center;
+    word-wrap: break-word;
+  }
+}
