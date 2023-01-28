@@ -59,24 +59,6 @@ function Contact() {
       </div>
 
       <form className={classes.contactForm} onSubmit={handleSubmit}>
-        <div className={classes.alertBox}>
-          <div className={classes.alert}>
-            <p className={classes.alertTitle}>Valid name:</p>
-            {!name ? (
-              <p className={classes.alertStatusN}>No</p>
-            ) : (
-              <p className={classes.alertStatusY}>Yes</p>
-            )}
-          </div>
-          <div className={classes.alert}>
-            <p className={classes.alertTitle}>Valid email:</p>
-            {!email.includes('@') ? (
-              <p className={classes.alertStatusN}>No</p>
-            ) : (
-              <p className={classes.alertStatusY}>Yes</p>
-            )}
-          </div>
-        </div>
         <input
           className={classes.inputField}
           placeholder="Name"
@@ -86,7 +68,9 @@ function Contact() {
           required
         />
         <input
-          className={classes.inputField}
+          className={`${classes.inputField} ${
+            !email.includes('@gmail.com') ? classes.red : classes.green
+          }`}
           placeholder="Email"
           type="email"
           value={email}
