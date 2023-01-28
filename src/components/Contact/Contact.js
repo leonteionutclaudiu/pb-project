@@ -60,7 +60,9 @@ function Contact() {
 
       <form className={classes.contactForm} onSubmit={handleSubmit}>
         <input
-          className={classes.inputField}
+          className={`${classes.inputField} ${
+            name ? classes.green : classes.red
+          }`}
           placeholder="Name"
           type="text"
           value={name}
@@ -69,7 +71,7 @@ function Contact() {
         />
         <input
           className={`${classes.inputField} ${
-            !email.includes('@gmail.com') ? classes.red : classes.green
+            !email.includes('@') ? classes.red : classes.green
           }`}
           placeholder="Email"
           type="email"
@@ -78,7 +80,7 @@ function Contact() {
           required
         />
 
-        <input
+        <textarea
           className={classes.inputFieldMsg}
           placeholder="Message"
           type="text"
