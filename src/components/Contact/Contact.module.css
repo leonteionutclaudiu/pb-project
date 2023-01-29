@@ -102,6 +102,10 @@
   padding: 10px;
 }
 
+.inputFieldMsg:focus-visible {
+  border: 1px solid #828282;
+}
+
 .inputFieldName {
   width: 100%;
   padding: 10px;

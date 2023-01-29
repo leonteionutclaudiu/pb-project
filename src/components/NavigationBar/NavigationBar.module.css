@@ -14,6 +14,7 @@
 
 .navLogo {
   padding: 13px 24px;
+  cursor: pointer;
 }
 
 .navbarNav {
@@ -67,12 +68,12 @@
 }
 
 .ctaBtn:hover,
-.ctaBtnHidden {
+.ctaBtnHidden:hover {
   background-color: var(--buton-hover-color);
 }
 
 .ctaBtn:active,
-.ctaBtnHidden {
+.ctaBtnHidden:active {
   background-color: var(--buton-pressed-color);
 }
 
